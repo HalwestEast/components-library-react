@@ -23,14 +23,14 @@ export const SpotifyCard = () => {
           alt="Card Image"
         />
 
-        <motion.button
+        <button
           onClick={handlePlayPause}
           className={`absolute bottom-2 right-2 w-14 h-14 rounded-full bg-green-500 text-black flex items-center justify-center  ${
             isHovered || isPlaying ? "opacity-100" : "opacity-0"
           } `}
         >
           {isPlaying ? <IoIosPause size={30} /> : <IoIosPlay size={30} />}
-        </motion.button>
+        </button>
       </div>
 
       <div className="flex flex-col mt-1 items-start gap-1">
