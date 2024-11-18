@@ -1,10 +1,11 @@
 import "./App.css";
+import { SpotifyCard } from "./components/SpotifyCard";
 
 function App() {
   return (
-    <>
-      <div className="text-5xl">Holla</div>
-    </>
+    <div className="flex flex-row min-h-screen justify-center items-center bg-[#121212]">
+      <SpotifyCard />
+    </div>
   );
 }
 
